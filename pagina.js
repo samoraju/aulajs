@@ -5,7 +5,7 @@ var i;
 for (i = 0; i < close.length; i++) {
   close[i].onclick = function() {
     var div = this.parentElement; //retorna o elemento parente do elemento q ta sendo especificado
-    div.style.display = "none"
+    div.style.display = "none";
   }
 }
 
