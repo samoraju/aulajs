@@ -1,0 +1,88 @@
+/*deixando o width e o height do msm tamanho*/
+* {
+  box-sizing: border-box;
+  font-family: verdana;
+}
+
+/* tirando a bolinha da lista */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style da lista */
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #D2D0FF;
+  font-size: 18px;
+  transition: 0.2s;
+}
+
+/* deixa o background dos elementos da lista de cores diferentes (um sim, um nao) */
+ul li:nth-child(odd) {
+  background: #B7B5E5;
+}
+
+/* efeitinho massa pra mudar a cor qnd o mouse passa em cima*/
+ul li:hover {
+  background: #E0E5EA;
+}
+
+/* style btn excluir*/
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Style the header */
+.header {
+  background-color: #1E197F;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+
+/* Clear floats after the header */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* style campo de texto */
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+/* Style botao add */
+.addBtn {
+  padding: 10px;
+  width: 25%;
+  background: #D6D6D3;
+  color: #7F7F7D;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.addBtn:hover {
+  background-color: #E5E5E1;
+}
