@@ -1,21 +1,11 @@
 
-/*var Nodelist = document.getElementsByTagName("LI");
-var i;
-for (i = 0; i < Nodelist.length; i++) {
-  var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u00D7"); //simbolo x
-  span.className = "close";
-  span.appendChild(txt);
-  Nodelist[i].appendChild(span);
-}*/
-
 // removendo o item da lista (hide)
 var close = document.getElementsByClassName("close");
 var i;
 for (i = 0; i < close.length; i++) {
   close[i].onclick = function() {
     var div = this.parentElement; //retorna o elemento parente do elemento q ta sendo especificado
-    div.style.display = "none";
+    div.style.display = "none"
   }
 }
 
